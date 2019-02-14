@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @reserva.direccion %>
+</p>
+
+<p>
+  <strong>Hijos:</strong>
+  <%= @reserva.hijos %>
+</p>
+
+<p>
+  <strong>De:</strong>
+  <%= @reserva.de %>
+</p>
+
+<p>
+  <strong>Hasta:</strong>
+  <%= @reserva.hasta %>
+</p>
+
+<%= link_to 'Edit', edit_reserva_path(@reserva) %> |
+<%= link_to 'Back', reservas_path %>
+
+
+
+<h2>pick someone</h2>
+<ul>
+<% @babysitters.each do |b|%>
+  <%= b.nombre %>
+<% end %>
+</ul>

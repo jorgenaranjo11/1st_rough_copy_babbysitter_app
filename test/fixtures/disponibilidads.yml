@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 1
+  manana: false
+  tarde: false
+  noche: false
+
+two:
+  fecha: 1
+  manana: false
+  tarde: false
+  noche: false

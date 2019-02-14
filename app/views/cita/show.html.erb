@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @citum.direccion %>
+</p>
+
+<p>
+  <strong>Hijos:</strong>
+  <%= @citum.hijos %>
+</p>
+
+<p>
+  <strong>De:</strong>
+  <%= @citum.de %>
+</p>
+
+<p>
+  <strong>A:</strong>
+  <%= @citum.a %>
+</p>
+
+<%= link_to 'Edit', edit_citum_path(@citum) %> |
+<%= link_to 'Back', cita_path %>

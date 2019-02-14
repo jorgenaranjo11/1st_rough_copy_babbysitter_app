@@ -1,0 +1,37 @@
+<%= form_with(model: citum, local: true) do |form| %>
+  <% if citum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(citum.errors.count, "error") %> prohibited this citum from being saved:</h2>
+
+      <ul>
+      <% citum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :direccion %>
+    <%= form.text_field :direccion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hijos %>
+    <%= form.number_field :hijos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :de %>
+    <%= form.number_field :de %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a %>
+    <%= form.number_field :a %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<%= form_with(model: disponibilidad, local: true) do |form| %>
+  <% if disponibilidad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(disponibilidad.errors.count, "error") %> prohibited this disponibilidad from being saved:</h2>
+
+      <ul>
+      <% disponibilidad.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_field :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manana %>
+    <%= form.check_box :manana %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tarde %>
+    <%= form.check_box :tarde %>
+  </div>
+
+  <div class="field">
+    <%= form.label :noche %>
+    <%= form.check_box :noche %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

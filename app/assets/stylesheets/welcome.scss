@@ -2,10 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#kids, #time {
-    background-color: #1C5DA6
+.navbar{
+    background-color: #fff600
 }
 
-#location {
-    background-color: #ffff00
+#banner {
+    background-color: #007bff
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }

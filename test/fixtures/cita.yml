@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  direccion: MyString
+  hijos: 1
+  de: 1
+  a: 1
+
+two:
+  direccion: MyString
+  hijos: 1
+  de: 1
+  a: 1

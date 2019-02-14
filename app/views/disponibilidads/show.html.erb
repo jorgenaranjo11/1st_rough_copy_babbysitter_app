@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @disponibilidad.fecha %>
+</p>
+
+<p>
+  <strong>Manana:</strong>
+  <%= @disponibilidad.manana %>
+</p>
+
+<p>
+  <strong>Tarde:</strong>
+  <%= @disponibilidad.tarde %>
+</p>
+
+<p>
+  <strong>Noche:</strong>
+  <%= @disponibilidad.noche %>
+</p>
+
+<%= link_to 'Edit', edit_disponibilidad_path(@disponibilidad) %> |
+<%= link_to 'Back', disponibilidads_path %>
