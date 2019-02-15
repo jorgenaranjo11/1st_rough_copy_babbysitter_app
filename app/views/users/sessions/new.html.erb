@@ -1,12 +1,15 @@
  <%= stylesheet_link_tag    'sessions', media: 'all', 'data-turbolinks-track': 'reload' %>
-<div class="main">
 
-<nav class="navbar navbar-default">
+
+<div class="header">
   Niñera
-</nav>
+</div>
 
+<div class="login">
 <h2>Log in</h2>
+</div>
 
+<div class="main">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br/>
@@ -27,12 +30,12 @@
 
 </div>
 
-<div class="footer">
-
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
 <% end %>
-<%= render "users/shared/links" %>
+
+<div class="footer">
+<%=render "users/shared/links" %>
 
 </div>

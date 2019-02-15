@@ -1,10 +1,37 @@
+
+
+.header {
+    display: flex;
+    background-color:  #fff600;
+    font-size: 22px;
+    padding: 5px;
+    border: 4px groove;
+    margin-bottom: 20px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    background-color:  #fff600;
+    width: 45%;
+    margin-left: 25%;
+}
 .main {
     display: flex;
     justify-content: center;
+    background-color:  #fff600;
+    width: 45%;
+    margin-left: 25%;
+}
+
+.field {
+    margin-bottom: 12px;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between; 
+    margin-top: 25px;  
 }
